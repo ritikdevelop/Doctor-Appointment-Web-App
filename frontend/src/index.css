@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+
+*{
+  font-family: Outfit;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.active hr {
+  @apply block;
+}
 
-.active hr{
-    @apply block
+::-webkit-scrollbar {
+  @apply hidden;
 }
