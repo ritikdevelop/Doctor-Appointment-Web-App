@@ -12,16 +12,18 @@ const Doctors = () => {
 
   const applyFilter = () => {
     if (speciality) {
-      setFilterDoc(doctors.filter(doc => doc.speciality === speciality));
+      setFilterDoc(doctors.filter(doc = doc.speciality === speciality));
     } else {
       setFilterDoc(doctors);
     }
+
   };
-
-  useEffect(() => {
-    applyFilter();
-  }, [doctors, speciality]);
-
+    
+    useEffect(() => {
+      
+      applyFilter();
+    }, [doctors, speciality]);
+    
   return (
     <div>
       <p className="text-gray-600">Browse through the doctors specialist.</p>
