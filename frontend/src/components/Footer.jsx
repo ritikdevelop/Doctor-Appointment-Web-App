@@ -38,8 +38,8 @@ const Footer = () => {
       <div>
         {/* //* Copyright Text */}
         <div>
-            <hr />
-            <p className="py-5 text-sm text-center">copyright 2024@ritik rana</p>
+          <hr />
+          <p className="py-5 text-sm text-center">copyright 2024@ritik rana</p>
         </div>
       </div>
     </div>
