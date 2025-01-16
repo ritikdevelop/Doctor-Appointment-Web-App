@@ -8,8 +8,8 @@ const doctorSchema = new mongoose.Schema(
     },
     email: {
       type: String,
-      unique: true,
       required: true,
+      unique: true,
     },
     password: {
       type: String,
@@ -24,7 +24,7 @@ const doctorSchema = new mongoose.Schema(
       required: true,
     },
     experience: {
-      type: Number,
+      type: String,
       required: true,
     },
     about: {
@@ -33,7 +33,7 @@ const doctorSchema = new mongoose.Schema(
     },
     availability: {
       type: Boolean,
-      required: true,
+      default: true,
     },
     fees: {
       type: Number,
